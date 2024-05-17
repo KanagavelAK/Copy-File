@@ -4,22 +4,46 @@ To write a python program for copying the contents from one file to another file
 ## EQUIPEMENT'S REQUIRED: 
 PC
 Anaconda - Python 3.7
-## ALGORITHM: 
+## ALGORITHM:
+
 ### Step 1:
 
-### Step 2: 
- 
-### Step 3: 
+Load the CSV into a DataFrame.
 
-### Step 4:  
+### Step 2:
 
-### Step 5: 
+Print the number of contents to be displayed using df.head().
 
-### Step 6: 
+### Step 3:
+
+The number of rows returned is defined in Pandas option settings.
+
+### Step 4:
+
+Check your system's maximum column with the pd.options.display.max_column statement.
+
+### Step 5:
+
+Increase the maximum number of rows to display the entire DataFrame.
+
 
 ## PROGRAM:
+# To write a python program for reading content from a CSV file.
+```python
+# Developed by: Kanagavel A K
+# Register Number: 212223230096
+
+
+import pandas as pd
+df = pd.read_csv('nba.csv')
+print(df.head(10))
+print(df.tail())
+print("Number of rows:",len(df.axes[0]))
+print("Number of columns:",len(df.axes[1]))
+```
 
 ### OUTPUT:
+![image](https://github.com/drgbhuvaneswari/Copy-File/assets/151514454/f173e1e4-e202-42b6-8592-a9fbf08d9a6d)
 
 
 
